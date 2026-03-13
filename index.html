@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Benedict Abao | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/png/1x1pic.jpg" class="header__logo-img" alt="John Benedict Abao" />
+        </div>
+        <span class="header__logo-sub">John Benedict Abao</span>
+      </div>
+
+      <div class="header__main">
+        <ul class="header__links">
+          <li><a href="#home" class="header__link">Home</a></li>
+          <li><a href="#about" class="header__link">About</a></li>
+          <li><a href="#projects" class="header__link">Projects</a></li>
+          <li><a href="#contact" class="header__link">Contact</a></li>
+          <div class="theme-switch">
+           <span class="theme-switch__label light-label"></span>
+            <div class="theme-switch__track">
+             <div class="theme-switch__knob"></div>
+            </div>
+            <span class="theme-switch__label dark-label"></span>
+          </div>
+        </ul>
+
+
+        <div class="header__main-ham-menu-cont">
+        </div>
+
+        
+      </div>
+    </div>
+
+    <!-- Small menu -->
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link"><a href="#home">Home</a></li>
+          <li class="header__sm-menu-link"><a href="#about">About</a></li>
+          <li class="header__sm-menu-link"><a href="#projects">Projects</a></li>
+          <li class="header__sm-menu-link"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Hi, I'm John Benedict C. Abao</h1>
+      <p class="home-hero__subtitle">Try Hard <span id="typing" class="typing-text"></span></p>
+      
+      <div class="home-hero__cta">
+        <a href="#projects" class="btn btn--bg">View My Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med"><span class="heading-sec__main">About Me</span></h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <img src="./assets/png/1x1pic.jpg" class="about__photo" alt="John Benedict Abao">
+          <h3 class="about__content-title">Get to know me!</h3>
+          <p class="about__content-details-para">
+            Hey! It's <strong>John Benedict Abao</strong> and I'm a <strong>Full Stack Programmer</strong>.<br><br>
+            Throughout my experience as a student at Quezon City University, I have worked on various projects, honing my skills in both front-end and back-end technologies. 
+            I am always eager to learn and grow, constantly improving my technical abilities to deliver efficient and scalable solutions.
+          </p>
+        </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">My Skills</h3>
+          <div class="skills-progress">
+            <div class="skill-item" data-category="web"><span>HTML</span><div class="progress-container"><div class="progress-bar" data-width="85"></div></div></div>
+            <div class="skill-item" data-category="web"><span>CSS</span><div class="progress-container"><div class="progress-bar" data-width="85"></div></div></div>
+            <div class="skill-item" data-category="web"><span>JavaScript</span><div class="progress-container"><div class="progress-bar" data-width="75"></div></div></div>
+            <div class="skill-item" data-category="web"><span>React & Bootstrap</span><div class="progress-container"><div class="progress-bar" data-width="70"></div></div></div>
+            <div class="skill-item" data-category="desktop"><span>ASP.NET (C# / VB)</span><div class="progress-container"><div class="progress-bar" data-width="85"></div></div></div>
+            <div class="skill-item" data-category="desktop"><span>Oracle & MySQL</span><div class="progress-container"><div class="progress-bar" data-width="78"></div></div></div>
+            <div class="skill-item" data-category="iot"><span>Python</span><div class="progress-container"><div class="progress-bar" data-width="70"></div></div></div>
+            <div class="skill-item" data-category="iot"><span>Firebase & ESP32 IoT</span><div class="progress-container"><div class="progress-bar" data-width="68"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
+        <span class="heading-sec__sub">Full-Stack • Desktop • IoT</span>
+      </h2>
+
+      <!-- FILTER BUTTONS -->
+      <div class="projects__filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="desktop">Desktop</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+      </div>
+
+      <div class="projects__content">
+        <!-- Project 1 -->
+        <div class="projects__row" data-category="desktop">
+          <div class="projects__row-img-cont"><img src="./assets/jpeg/mang-inasar_logo.jpg" class="projects__row-img" alt="Mang Inasar"></div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Mang Inasar Online Ordering System</h3>
+            <p class="projects__row-content-desc">Mock-up front-end ordering system inspired by Mang Inasal. Built with ASP.NET and CSS frameworks.</p>
+            <div class="projects__tech-tags">
+              <span class="tag">VB.NET</span>
+              <span class="tag">CSS</span>
+            </div>
+            <a href="./project-1.html" class="btn btn--med btn--theme">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="projects__row" data-category="desktop">
+          <div class="projects__row-img-cont"><img src="./assets/jpeg/payrllbg.jpg" class="projects__row-img" alt="Payroll"></div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Payroll Management System</h3>
+            <p class="projects__row-content-desc">Automates salary calculation, deductions and payslips. Built with ASP.NET and MySQL.</p>
+            <div class="projects__tech-tags">
+              <span class="tag">VB.NET</span>
+              <span class="tag">Crystal Reports</span>
+            </div>
+            <a href="./project-2.html" class="btn btn--med btn--theme">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="projects__row" data-category="web">
+          <div class="projects__row-img-cont"><img src="./assets/jpeg/LMS.jpeg" class="projects__row-img" alt="Library"></div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Library Management System</h3>
+            <p class="projects__row-content-desc">Student + Admin sides with borrowing, returns, reports. ASP.NET C# + Oracle.</p>
+            <div class="projects__tech-tags">
+              <span class="tag">ASP.NET C#</span>
+              <span class="tag">Oracle</span>
+            </div>
+            <a href="./project-3.html" class="btn btn--med btn--theme">View Project + Video</a>
+          </div>
+        </div>
+
+        <!-- Project 4 GreenPulse -->
+        <div class="projects__row" data-category="iot">
+          <div class="projects__row-img-cont">
+  <video class="projects__row-img" autoplay muted loop playsinline>
+    <source src="./assets/video/Greenpulse.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">GreenPulse - AI-IoT Urban Farming</h3>
+            <p class="projects__row-content-desc">Smart irrigation with ESP32, sensors, Python, Firebase, real-time dashboard.</p>
+            <div class="projects__tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">ESP32</span>
+              <span class="tag">Firebase</span>
+            </div>
+            <a href="./project-4.html" class="btn btn--med btn--theme">View Project + Gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-2">
+          <h1 class="heading heading-sm main-footer__heading-sm"><span>Contact</span></h1>
+          <h2><b>abao.johnbenedict.cortuza@gmail.com</b></h2>
+          <h2><b>09510835342</b></h2>
+          <div>
+          <a href="https://www.instagram.com/_bxn.j?igsh=MWQ1dTIyaXY3eGluZA%3D%3D&utm_source=qr" target="_blank" class="social-icon">
+  <img src="./assets/png/insta-ico.png" alt="Instagram" />
+</a>
+<a href="https://github.com/Benjyuiop" target="_blank" class="social-icon">
+  <img src="./assets/png/github-ico.png" alt="GitHub" />
+</a>
+<a href="https://www.facebook.com/share/1Y9s5cU2nz/?mibextid=wwXIfr" target="_blank" class="social-icon">
+  <img src="./assets/png/facebook.png" alt="Facebook" />
+</a>
+<a href="https://x.com/abaojben38250?s=21" target="_blank" class="social-icon">
+  <img src="./assets/png/twitter.png" alt="Twitter/X" />
+</a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-3">
+          <img src="./assets/jpeg/My logo.JPG" alt="Logo">
+        </div>
+      </div>
+      <div class="main-footer__lower">
+        &copy; 2026 John Benedict Abao • Made with ❤️ for CC106
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONTACT -->
+<section id="contact" class="contact sec-pad">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-med">
+      <span class="heading-sec__main">Get In Touch</span>
+    </h2>
+    <div class="contact__form-container">
+      <form id="contact-form">
+        <div class="contact__form-field">
+          <input type="text" 
+                 class="contact__form-input" 
+                 id="name" 
+                 name="name" 
+                 placeholder="Your Name" 
+                 required>
+        </div>
+        <div class="contact__form-field">
+          <input type="email" 
+                 class="contact__form-input" 
+                 id="email" 
+                 name="email" 
+                 placeholder="Your Email" 
+                 required>
+        </div>
+        <div class="contact__form-field">
+          <textarea class="contact__form-input" 
+                    id="message" 
+                    name="message" 
+                    rows="6" 
+                    placeholder="Your Message" 
+                    required></textarea>
+        </div>
+        <button type="submit" class="btn btn--theme">Send Message</button>
+      </form>
+      <div id="form-success" class="form-success hidden">✅ Message sent! I'll reply soon.</div>
+    </div>
+  </div>
+</section>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="back-to-top">↑</button>
+
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("KKwZSnW1eDS8Z3Dp5"); // Replace with your actual public key
+  })();
+</script>
+</body>
+</html>

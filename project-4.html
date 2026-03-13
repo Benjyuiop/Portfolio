@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenPulse</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+ </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/1x1pic.jpg"
+              alt="John Benedict Abao Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">John Benedict Abao</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <div class="theme-switch">
+           <span class="theme-switch__label light-label"></span>
+            <div class="theme-switch__track">
+             <div class="theme-switch__knob"></div>
+            </div>
+            <span class="theme-switch__label dark-label"></span>
+          </div>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <h1 class="heading-primary">GREENPULSE - AI-IOT URBAN FARMING</h1>
+    </div>
+  </section>
+
+  <section class="project-details">
+    <div class="main-container">
+      <div class="project-details__content">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">UI EXAMPLE AND HARDWARE</span>
+        </h2>
+        
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 40px;">
+          <img src="./assets/jpeg/GP_Login Page.JPG" class="project-details__showcase-img" alt="Login">
+          <img src="./assets/jpeg/GP_Dashboard.JPG" class="project-details__showcase-img" alt="Dashboard">
+          <img src="./assets/jpeg/GP_Water Consumption.JPG" class="project-details__showcase-img" alt="Analytics">
+          <img src="./assets/jpeg/GP_Irrigatio Setting.JPG" class="project-details__showcase-img" alt="Irrigation">
+          <img src="./assets/jpeg/GP_Settings.JPG" class="project-details__showcase-img" alt="Settings">
+          <img src="./assets/jpeg/GP_Crops Info.JPG" class="project-details__showcase-img" alt="Crops Info">
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 40px;">
+    <img 
+        src="./assets/jpeg/Device.jpg" 
+        class="project-details__showcase-img" 
+        alt="Device"
+        style="
+            max-width: 300px;         
+            width: 100%; 
+            height: auto; 
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border: 1px solid #e0e0e0;
+        ">
+        </div>
+
+        <div class="project-details__content-main">
+          <div class="project-details__desc">
+            <h3 class="project-details__content-title">Project Overview</h3>
+            <p class="project-details__desc-para">
+  GreenPulse is an innovative IoT platform that combines real‑time sensor data with artificial intelligence to enable precision agriculture and sustainable urban farming. At its core, the system uses an ESP32 microcontroller connected to a suite of sensors that continuously monitor critical soil and environmental parameters: moisture levels at multiple depths, ambient temperature, humidity, and light intensity. This data is transmitted wirelessly to a cloud‑based Python backend hosted on Firebase, where it is stored and analyzed.
+</p>
+<p class="project-details__desc-para">
+  A custom AI model, trained on historical crop data and integrated with a weather API, predicts irrigation needs based on current conditions and short‑term forecasts. When the model determines that water is required, the system automatically activates a relay‑controlled irrigation network, delivering precise amounts of water to individual plant zones – reducing waste and preventing over‑ or under‑watering.
+</p>
+<p class="project-details__desc-para">
+  Users can monitor the entire operation through a responsive web dashboard that displays live sensor readings, historical trends, and AI‑driven recommendations. The dashboard also allows manual overrides and threshold adjustments. By automating irrigation decisions with intelligence rather than simple timers, GreenPulse conserves water, improves crop yields, and provides urban farmers with actionable insights, all while running on low‑cost, energy‑efficient hardware.
+</p>
+          </div>
+          <div class="project-details__tools-used">
+            <h3 class="project-details__content-title">Technologies Used</h3>
+            <div class="skills">
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">Firebase</div>
+              <div class="skills__skill">ESP32 IoT</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">Chart.js</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-2">
+          <h1 class="heading heading-sm main-footer__heading-sm"><span>Contact</span></h1>
+          <h2><b>abao.johnbenedict.cortuza@gmail.com</b></h2>
+          <h2><b>09510835342</b></h2>
+          <div>
+          <a href="https://www.instagram.com/_bxn.j?igsh=MWQ1dTIyaXY3eGluZA%3D%3D&utm_source=qr" target="_blank" class="social-icon">
+  <img src="./assets/png/insta-ico.png" alt="Instagram" />
+</a>
+<a href="https://github.com/Benjyuiop" target="_blank" class="social-icon">
+  <img src="./assets/png/github-ico.png" alt="GitHub" />
+</a>
+<a href="https://www.facebook.com/share/1Y9s5cU2nz/?mibextid=wwXIfr" target="_blank" class="social-icon">
+  <img src="./assets/png/facebook.png" alt="Facebook" />
+</a>
+<a href="https://x.com/abaojben38250?s=21" target="_blank" class="social-icon">
+  <img src="./assets/png/twitter.png" alt="Twitter/X" />
+</a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-3">
+          <img src="./assets/jpeg/My logo.JPG" alt="Logo">
+        </div>
+      </div>
+      <div class="main-footer__lower">
+        &copy; 2026 John Benedict Abao • Made with ❤️ for CC106
+      </div>
+    </div>
+  </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
